@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTTP fetch 실습</title>
+    <title>유성원 / 5-1(HTTP fetch)</title>
     <link rel="stylesheet" href="실습5-1_산학연계.css" />
   </head>
   <body>
     <main class="container">
       <h1>게시글 가져오기</h1>
       <p>버튼을 누르면 API에서 게시글 데이터를 가져옵니다.</p>
+
+      <p>Request: 브라우저가 서버에 원하는 데이터나 작업을 요청하는 것</p>
+      <p>Response: 서버가 요청을 처리한 후 결과 데이터를 브라우저에 보내주는 것</p>
+
+      <p>API는 브라우저와 서버가 데이터를 주고받을 수 있게 해주는 창구 역할을 하기 때문에 필요</p>
+      <p>날씨 앱에서 현재 날씨 정보를 보여주려면 날씨 API에 요청해서 실시간 데이터를 받아와야 함</p>
+
+      <p>JSON은 서버와 브라우저가 데이터를 일정한 형식으로 쉽게 주고받기 위해 필요하다.</p>
+
+      <p>response.json(): 서버가 보낸 응답 데이터를 JSON 형식에서 자바스크립트 객체로 변환하는 역할을 한다.</p>
 
       <button id="load-button">게시글 불러오기</button>
       <div id="post-list" class="post-list"></div>
